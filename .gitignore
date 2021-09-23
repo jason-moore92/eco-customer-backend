@@ -9,6 +9,9 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# IDE
+.vscode/
+
 # Runtime data
 pids
 *.pid
@@ -72,6 +75,9 @@ typings/
 .env
 .env.test
 
+# serverless
+.serverless
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
@@ -80,7 +86,9 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
+
 dist
+.webpack
 
 # Gatsby files
 .cache/

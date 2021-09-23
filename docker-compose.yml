@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  tmvaservices:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: trademantri/userapp:tmv-user-app-services
+    container_name: tmvaservices
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  webserver:
+    image: trademantri/userapp:tmv-user-app-services-nginx
+    build:
+      context: .
+      dockerfile: DockerfileNginx
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - tmvaservices
+    networks:
+      - app-network
+      - default
+
+networks:
+  app-network:
+    driver: bridge  

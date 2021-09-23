@@ -1,0 +1,38 @@
+service: tm-users
+
+plugins:
+  - serverless-bundle 
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 512
+  timeout: 15
+  stage: defaults
+  region: ap-south-1 
+
+custom:
+  bundle:
+    sourcemaps: true     
+    linting: false
+    fixPackages:
+      - "formidable@1.x"
+    copyFiles:
+      - from: .env
+        to: './'
+      - from: public 
+        to: public
+      - from: fonts 
+        to: fonts
+      - from: ./node_modules/html-pdf/lib/scripts
+        to: './scripts'
+    packager: yarn 
+
+
+package:
+  individually: true 
+  
+
+functions:
+  app:
+    handler: sls.handler

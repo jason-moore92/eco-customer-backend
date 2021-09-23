@@ -1,0 +1,1 @@
+import enLang from './en.json'

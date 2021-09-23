@@ -1,0 +1,32 @@
+version: 0.2
+
+env:
+  variables:
+    ZIP_FILE: "app.zip" ## Actuall this should be extracted after serverless package command.
+  exported-variables:
+    - ZIP_FILE
+
+phases:
+  install:
+    commands:
+    - npm install --silent --no-progress -g npm
+    - npm install --silent --no-progress -g serverless
+  pre_build:
+    commands:
+    - npm install --no-progress
+  build:
+    commands:
+
+    - rm -f .env
+    - ENV_JSON=$(aws secretsmanager get-secret-value --secret-id $SM_NAME)
+    - ENV_VALUE=$(echo $ENV_JSON | jq -r '.SecretString')
+    - ENV_PARSED=$(echo "$ENV_VALUE" | jq -r 'keys[] as $k | "\($k)=\(.[$k])\\n"' )
+    - echo $ENV_PARSED > .env
+
+    - mkdir -p build
+    - serverless package --package build --stage default -v -r ap-south-1
+
+artifacts:
+  base-directory: 'build'
+  files:
+    - "**/*"

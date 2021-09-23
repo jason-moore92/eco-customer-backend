@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!--
+  Invoice template by invoicebus.com
+  To customize this template consider following this guide https://invoicebus.com/how-to-create-invoice-template/
+  This template is under Invoicebus Template License, see https://invoicebus.com/templates/license/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice (trapp)</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Invoicebus Invoice Template">
+    <meta name="author" content="Invoicebus">
+
+    <meta name="template-hash" content="b3bff3b9c006818788e51e3861f9946b">
+
+    <!-- <link rel="stylesheet" href="css/template.css"> -->
+    <style type="text/css">
+      /*! Invoice Templates @author: Invoicebus @email: info@invoicebus.com @web: https://invoicebus.com @version: 1.0.0 @updated: 2017-04-08 15:04:50 @license: Invoicebus */
+/* Reset styles */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext,latin,greek-ext,greek,latin-ext,vietnamese");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Invoice styles */
+/**
+ * DON'T override any styles for the <html> and <body> tags, as this may break the layout.
+ * Instead wrap everything in one main <div id="container"> element where you may change
+ * something like the font or the background of the invoice
+ */
+html, body {
+  /* MOVE ALONG, NOTHING TO CHANGE HERE! */
+}
+
+/** 
+ * IMPORTANT NOTICE: DON'T USE '!important' otherwise this may lead to broken print layout.
+ * Some browsers may require '!important' in oder to work properly but be careful with it.
+ */
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  font: normal 13px/1.4em 'Open Sans', Sans-serif;
+  margin: 0 auto;
+  padding: 0 50px 20px 50px;
+  min-height: 1138px;
+  position: relative;
+  color: #231F20;
+}
+
+.left {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.right {
+  float: right;
+}
+
+#memo .color1, #memo .color2, #memo .color3 {
+  color: black;
+  max-width: 250px;
+  padding: 10px 0px;
+}
+/* #memo .color1 {
+  background: #BA334D;
+} */
+#memo .color1.padding {
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+/* #memo .color2 {
+  background: #36663E;
+}
+#memo .color3 {
+  background: #798F72;
+} */
+#memo .company-info .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+#memo .company-info div {
+  margin-bottom: 3px;
+}
+#memo .top-space {
+  height: 35px;
+}
+#memo .logo {
+  float: left;
+}
+#memo .logo img {
+  width: 150px;
+  height: 150px;
+}
+#memo:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#invoice-info > div > label {
+  min-width: 40px;
+  max-width: 120px;
+  float: left;
+  min-height: 18px;
+}
+#invoice-info > div > span {
+  min-width: 40px;
+  max-width: 120px;
+  display: block;
+  float: right;
+  text-align: right;
+  min-height: 18px;
+}
+#invoice-info > div:after {
+  content: '';
+  display: block;
+  clear: both;
+  margin-bottom: 3px;
+}
+
+#client-info {
+  margin-top: 20px;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: left;
+}
+#client-info > div {
+  margin-bottom: 3px;
+}
+#client-info span {
+  display: block;
+}
+#client-info > span {
+  margin-bottom: 10px;
+}
+
+#invoice-title-number {
+  font-size: 25px;
+  margin: 70px 0 20px 0;
+  float: left;
+  color: #BA334D;
+}
+#invoice-title-number #title {
+  margin-right: 5px;
+}
+#invoice-title-number #number {
+  margin-left: 5px;
+}
+
+#issue_date {
+  color: #989898;
+  float: left;
+  margin: 0 0 40px 0px;
+}
+
+table {
+  table-layout: fixed;
+}
+table th, table td {
+  vertical-align: top;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+#items .first-cell, #items table th:first-child, #items table td:first-child {
+  width: 18px;
+  text-align: right;
+}
+#items table {
+  border-collapse: separate;
+  width: 100%;
+  border-bottom: 1px solid #BA334D;
+}
+#items table th {
+  font-weight: bold;
+  color: #231F20;
+  padding: 12px 10px;
+  text-align: right;
+  border-bottom: 3px solid #BA334D;
+}
+#items table th:first-child {
+  width: 25%;
+  text-align: left;
+}
+#items table th:last-child {
+  text-align: right;
+}
+#items table td {
+  padding: 15px 10px;
+  text-align: right;
+}
+#items table td:first-child {
+  text-align: left;
+}
+/* #items table td:nth-child(1) {
+  text-align: left;
+} */
+
+#sums {
+  float: right;
+  margin-top: 30px;
+  page-break-inside: avoid;
+}
+#sums table {
+  text-transform: uppercase;
+}
+#sums table tr th, #sums table tr td {
+  min-width: 100px;
+  padding: 10px;
+  text-align: right;
+}
+#sums table tr th {
+  text-align: left;
+  padding-right: 25px;
+}
+#sums table tr.amount-total {
+  font-size: 16px;
+}
+#sums table tr.amount-total th {
+  color: #BA334D;
+}
+#sums table tr.amount-total th, #sums table tr.amount-total td {
+  font-weight: bold;
+  border-top: 3px solid #BA334D;
+}
+#sums table tr:last-child {
+  font-size: 16px;
+}
+#sums table tr:last-child th {
+  color: #BA334D;
+}
+#sums table tr:last-child th, #sums table tr:last-child td {
+  font-weight: bold;
+}
+
+#terms {
+  margin: 70px 0 10px 0;
+  font-size: 14px;
+  page-break-inside: avoid;
+}
+#terms > div {
+  color: #989898;
+  text-align: center;
+  min-height: 40px;
+}
+
+.payment-info {
+  color: #989898;
+  text-align: center;
+}
+.payment-info div {
+  display: inline-block;
+  min-width: 10px;
+}
+
+.bottom-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.bottom-stripe div {
+  height: 10px;
+  float: left;
+}
+.bottom-stripe .color1-bottom {
+  background: #BA334D;
+  width: 273px;
+}
+.bottom-stripe .color2-bottom {
+  background: #36663E;
+  width: 274px;
+}
+.bottom-stripe .color3-bottom {
+  background: #798F72;
+  width: 273px;
+}
+
+.qrcode img {
+  margin-left: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+/**
+ * If the printed invoice is not looking as expected you may tune up
+ * the print styles (you can use !important to override styles)
+ */
+@media print {
+  /* Here goes your print styles */
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <section id="memo">
+        <div class="left">
+          <table>
+            <tr>
+              <td>
+                <div class="logo color1 padding">
+                  <img src="https://trapp-profile-bucket.s3.amazonaws.com/logo.png" , />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+                <div class="color2">
+                    <span><strong>Currency: </strong>{{currencySymbol}}</span>
+                  </div>
+            
+                  <div class="color3">
+                    <span><strong>Date: </strong>{{sendDate}}</span>
+                  </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="right">
+          <div class="color1 padding">
+            <div class="company-info">
+              <div class="name">Tax Invoice/Bill of Supply/Cash Memo</div>
+            </div>
+          </div>
+          <div class="qrcode">
+            <img src="{{qrcodeImgUrl}}" />
+          </div>
+        </div>
+
+        
+      </section>
+      
+      <section id="memo">
+        <div class="left">
+          <div class="color1 padding">
+            <div class="company-info">
+              <div class="name">SOLD BY:</div>
+              <br>
+              <div><strong>Store Name:  </strong>{{storeName}}</div>
+              <div><strong>Store Address:  </strong>{{storeAddress}}</div>
+              <div><strong>Store Phone:  </strong>{{storePhone}}</div>
+              <div><strong>Store Category:  </strong>{{storeCategoryDesc}}</div>
+              <div><strong>PAN: </strong>{{pan}}</div>
+              <div><strong>GST number: </strong>{{gstNumber}}</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="right">
+          <div class="color1 padding">
+            <div class="company-info">
+              <div class="name">Customer:</div>
+              <br>
+              <div><strong>User Name: </strong>{{senderName}}</div>
+              <div><strong>User Emil: </strong>{{senderEmail}}</div>
+              <div><strong>User Phone: </strong>{{senderPhone}}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="memo">
+        <div class="left">
+          <div class="color1 padding">
+            <div class="company-info">
+              <div class="name">Order Details:</div>
+              <br>
+              <div><strong>Order No: </strong>{{orderId}}</div>
+              <!-- <div><strong>Order Status: </strong>{{orderStatus}}</div> -->
+              <div><strong>Order Category: </strong>{{orderCategory}}</div>
+              <div><strong>Order Type: </strong>{{orderType}}</div>
+              <div class="{{pickupTimeHidden}}">
+                <strong>Pickup Time: </strong>{{pickupDateTime}}
+              </div>
+              <div class="{{serviceTimeHidden}}">
+                <strong>Service Time: </strong>{{serviceDateTime}}
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="right">
+          <div class="color1 padding {{deliveryAddressHidden}}">
+            <div class="company-info">
+              <div class="name">Delivery Detils:</div>
+              <br>
+              <div class="{{deliveryAddressHidden}}">
+                <span><strong>Delivery Address: </strong>{{deliveryAddress}}</span>
+              </div>
+              <div class="{{deliveryPartnerNameHidden}}">
+                <span><strong>Delivery Partner: </strong>{{deliveryPartnerName}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="invoice-title-number">
+      
+        <span id="title">INVOICE</span>
+        <span id="number">{{invoiceId}}</span>
+        
+      </section>
+      
+      <div class="clearfix"></div>
+
+      <section id="issue_date">
+        <span>Date:</span>
+        <span>{{sendDate}}</span>
+      </section>
+
+      <div class="clearfix"></div>
+      
+      <section id="items">
+        
+        <table cellpadding="0" cellspacing="0">
+        
+          <tr>
+            <!-- <th></th>  -->
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price<br>(₹)</th>
+            <th>Discount(₹)</th>
+            <th >Promo<br>code(₹)</th>
+            <th>Tax(%)</th>
+            <th>Tax(₹)</th>
+            <th>Total(₹)</th>
+          </tr>
+          {{#each products ~}}
+          <tr>
+            <!-- <td>{item_row_number}</td>  -->
+            <td >{{name}}</td>
+            <td>{{orderQuantity}}</td>
+            <td>{{price}}</td>
+            <td>{{discount}}</td>
+            <td>{{promocodeDiscount}}</td>
+            <td>{{taxPercentage}}</td>
+            <td>{{taxPrice}}</td>
+            <td>{{totalPrice priceFor1OrderQuantityAfterTax orderQuantity}}</td>
+          </tr>
+          {{~/each}}
+          {{#each services ~}}
+          <tr>
+            <!-- <td>{item_row_number}</td> -->
+            <td>{{name}}</td>
+            <td>{{orderQuantity}}</td>
+            <td >{{price}}</td>
+            <td>{{discount}}</td>
+            <td>{{promocodeDiscount}}</td>
+            <td>{{taxPercentage}}</td>
+            <td>{{taxPrice}}</td>
+            <td>{{totalPrice priceFor1OrderQuantityAfterTax orderQuantity}}</td>
+          </tr>
+          {{~/each}}
+          
+        </table>
+        
+      </section>
+      
+      <section id="sums">
+      
+        <table cellpadding="0" cellspacing="0">
+          <tr>
+            <th>Total Quantity:</th>
+            <td>{{totalQuantity}}</td>
+          </tr>
+
+          <tr class="{{ItemsTotalHidden}}">
+            <th>Items Total:</th>
+            <td>{{totalItemPrice}}</td>
+          </tr>
+
+          <tr class="{{deliveryHiden}}">
+            <th>Delivery Charge:</th>
+            <td>{{deliveryChargeAfterDiscount}}</td>
+          </tr>
+
+          <tr class="{{tipHiden}}">
+            <th>Tip:</th>
+            <td>{{tip}}</td>
+          </tr>
+
+          <tr class="{{totalTaxHiden}}">
+            <th>Total Tax:</th>
+            <td>{{totalTaxAfterDiscount}}</td>
+          </tr>
+
+          <tr class="{{redeemRewardValueHidden}}">
+            <th>Redeem Reward Value:</th>
+            <td>{{redeemRewardValue}}</td>
+          </tr>
+
+         
+          
+          <tr class="amount-total {{toPayHidden}}">
+            <th>To Pay</th>
+            <td>{{toPay}}</td>
+          </tr>
+        </table>
+        
+      </section>
+
+      
+      
+      
+      <div class="clearfix"></div>
+
+     
+      
+      <section  id="sums" style=" border-top: 1px solid #919191 ;padding-top: 30px;">
+      
+        <table cellpadding="0" cellspacing="0">
+          <tr class="{{originHidden}}">
+            <th>The Items Total Store Gets From This Order:</th>
+            <td>{{totalOriginPrice}}</td>
+          </tr>
+      
+          <tr class="{{originHidden}}">
+            <th>The Total Tax store gets from this order:</th>
+            <td>{{totalTaxBeforePromocode}}</td>
+          </tr>
+
+          <tr class="{{redeemRewardValueHidden}}">
+            <th>Redeem Reward Value:</th>
+            <td>₹ {{redeemRewardValue}}</td>
+          </tr>
+          
+          <tr class="{{redeemRewardPointHidden}}">
+            <th>Customer redeemed store reward points value:</th>
+            <td>{{redeemRewardPoint}}</td>
+          </tr>
+
+      
+          <tr class="{{originHidden}}" style=" border-top: 1px solid #0011FF ;padding-top: 30px;">
+            <th>Total Amount Store Gets:</th>
+            <td>{{totalAmountStore}}</td>
+          </tr>
+
+          
+          
+          <tr class="hidden">
+            <th></th>
+            <td></td>
+          </tr>
+      
+        </table>
+      
+      </section>
+
+      <div class="clearfix"></div>
+
+      <section id="terms">
+        <div>Thank you for using TradeMantri to order from {{storeName}}. Your business is always important to us.</div>
+        <div>For any questions regarding the order, <a href={{Company_Link}}><span>please contact customer support</span></a></div>
+      </section>
+<!-- 
+      <div class="payment-info">
+        <div>{payment_info1}</div>
+        <div>{payment_info2}</div>
+        <div>{payment_info3}</div>
+        <div>{payment_info4}</div>
+        <div>{payment_info5}</div>
+      </div>
+
+      <div class="bottom-stripe">
+        <div class="color1-bottom"></div>
+        <div class="color2-bottom"></div>
+        <div class="color3-bottom"></div>
+      </div> -->
+
+    </div>
+
+    <!-- <script src="http://cdn.invoicebus.com/generator/generator.min.js?data=true"></script> -->
+  </body>
+</html>

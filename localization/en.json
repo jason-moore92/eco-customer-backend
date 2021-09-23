@@ -1,0 +1,33 @@
+{
+  "apiError": "Something went wrong",
+  "insufficient_error_400": "Insufficient data!",
+  "auth_error_401": "Email or password is not correct",
+  "non_verified_account_402": "Your account hasn't verified.\nPlease check your email.",
+  "account_already_exist_403": "This account already exist",
+  "non_exist_account_404": "Your account don't exist",
+  "exipired_otp_405": "Your otp is expired, Please resend.",
+  "not_math_otp_406": "Not match otp. Please try again",
+  "auth_wrong_password_407": "Old Password is wrong",
+  "invalid_token_408": "Invalid jwtToken",
+  "auth_error_409": "PhoneNumber or password is not correct",
+  "non_verified_account_410": "Your phone is not verified, please login with email address",
+  "phoneNumber_error_411": "PhoneNumber is alreay exist. Please use a different phone number",
+  "expired_token": "This link is already expired. Please check email or use forgot password to verify",
+  "verified_success": "Your account has been successfully verified",
+  "verified_failed": "Your account hasn't been successfully verified",
+  "account_already_verified": "Your account is already verified using this link. Thank you",
+  "email_token_mismatch": "Verification token is invalid or might have expired. Please wait for a new verification token in a seperate email.",
+  "query_error": "Query Error",
+  "success": "Action success",
+  "remove_success": "Removed successfully",
+  "order_status": {
+    "order_placed": "Order Placed",
+    "order_accepted": "Order Accepted",
+    "order_paid": "Order Paid",
+    "pickup_ready": "PickUp ready",
+    "delivery_ready": "Delivery ready",
+    "order_cancelled": "Order Canceled",
+    "order_rejected": "Order Rejected",
+    "order_completed": "Order Completed"
+  }
+}

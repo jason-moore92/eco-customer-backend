@@ -1,0 +1,78 @@
+{
+  "order": {
+    "order_placed": {
+      "user": {
+        "title": "Order Placed",
+        "body": "Your order with the store store_name is successfully placed. \nOnce store representative accept the accept the order, you will be notified."
+      },
+      "store": {
+        "title": "Order Placed",
+        "body": "A customer user_name has placed an order with your store. Please check and accept the order based on availability of products or services."
+      }
+    },
+    "order_accepted_changed": {
+      "user": {
+        "title": "Order Accepted",
+        "body": "Your order is accepted and also changed based on the products and services available at store store_name."
+      }
+    },
+    "order_accepted_nochanged": {
+      "user": {
+        "title": "Order Accepted",
+        "body": "Your order is accepted by store_name"
+      }
+    },
+    "order_rejected": {
+      "user": {
+        "title": "Order Rejected",
+        "body": "Your order is rejected by store_name"
+      }
+    },
+    "order_cancelled": {
+      "store": {
+        "title": "Order Cancelled",
+        "body": "Your store order is cancelled by user_name"
+      }
+    },
+    "pickup_ready": {
+      "user": {
+        "title": "Pickup ready",
+        "body": "Your order is ready for pickup at store_name"
+      }
+    },
+    "delivery_ready": {
+      "user": {
+        "title": "Delivery ready",
+        "body": "Your order is ready for delivery by store_name"
+      }
+    },
+    "reward_point_earned": {
+      "user": {
+        "title": "Reward Points Earned",
+        "body": "You have earned rewardPointsEarnedPerOrder reward points for your order with store_name"
+      }
+    },
+    "reward_point_cancelled": {
+      "user": {
+        "title": "Reward Points cancelled",
+        "body": "The reward points were cancelled as the order order_id is no longer valid with store store_name"
+      }
+    }
+  },
+  "reverse_auction_to_store": {
+    "requested": {
+      "title": "Grab Your Lead",
+      "body": "There is an auction request from a customer, to grab the customer to your store, please place a bid with competitive offer"
+    },
+    "cancelled": {
+      "title": "Auction cancelled",
+      "body": "The reverse auction has been cancelled by user_name"
+    }
+  },
+  "reverse_auction_to_user": {
+    "store_offer": {
+      "title": "Bid offer from Store for your request",
+      "body": "There is a bid offer from store store_name for your bid request. Please check and accept if you like it."
+    }
+  }
+}
